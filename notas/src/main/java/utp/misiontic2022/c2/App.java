@@ -1,5 +1,7 @@
 package utp.misiontic2022.c2;
+
 import java.util.function.DoubleBinaryOperator;
+
 public class App 
 {
 public static void main( String[] args)
@@ -16,7 +18,7 @@ public static void main( String[] args)
         promedio -= auxnota;
         promedio /= args.length -2;
         promedio *= 0.05;
-System.out.printf( "el promedio del estudiante ID %s es: %.2f", args[0], promedio);
+System.out.printf( "el promedio del estudiante ID %s\t es: %.2f", args[0], promedio);
         
     }
         
