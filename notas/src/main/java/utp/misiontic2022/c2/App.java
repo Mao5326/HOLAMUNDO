@@ -6,13 +6,12 @@ public static void main( String[] args)
     {
         Double auxnota=Double.parseDouble(args[1]);
         Double promedio = auxnota;
-               
-        }
+        
         for(int i=2; i<args.length; i++){
             promedio += Double.parseDouble(args[i]);
             if(Double.parseDouble(args[i]) < auxnota){
                 auxnota = Double.parseDouble(args[i]);
-                
+            }   
          }
         promedio -= auxnota;
         promedio /= args.length -2;
@@ -22,3 +21,4 @@ System.out.printf( "el promedio del estudiante ID %s es: %.2f", args[0], promedi
     }
         
 }
+
